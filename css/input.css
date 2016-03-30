@@ -1,0 +1,65 @@
+#ModalLabel {
+  font-weight: bold;
+}
+
+.tab-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#input * {
+  font-size: 14px;
+}
+
+.input-form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+}
+
+.input-form .form-item {
+  width: 270px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-form .form-item label {
+  width: 80px;
+}
+
+.input-form .form-item label span {
+  color: red;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.input-form .form-item input {
+  width: 190px;
+}
+
+.input-form .form-item input:hover {
+  background-color: #f9f9f9;
+}
+
+.form-note {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-note label {
+  width: 80px;
+}
+
+.form-note textarea {
+  width: calc(100% - 80px);
+}
+
+.form-note textarea:hover {
+  background-color: #f9f9f9;
+}

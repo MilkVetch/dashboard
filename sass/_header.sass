@@ -1,0 +1,127 @@
+.header
+	background-color: rgb(67, 142, 175)
+	+size(100%, 50px)
+	+bp(max, 600px)
+		height: 100px
+		background-color: shade(rgb(67, 142, 175), 10%)
+	ul.main-nav
+		+clearfix
+		li
+			ul.left-nav
+				list-style: none
+				li
+					float: left
+					border-right: 1px solid shade(rgb(67, 142, 175), 20%)
+					+bp(max, 600px)
+						background-color: shade(rgb(67, 142, 175), 10%)
+					&:first-child
+						font-family: SimSun
+						font-size: 20px
+						a
+							&:hover
+								background-color: rgb(67, 142, 175)
+						+bp(max, 600px)
+							background-color: rgb(67, 142, 175)
+							width: 100%
+
+					a
+						height: 50px
+						line-height: 50px
+						display: inline-block
+						padding: 0 1em
+						color: white
+						position: relative
+						i
+							margin-right: 0.5em
+						&:hover
+							background-color: shade(rgb(67, 142, 175), 20%)
+
+						+bp(max, 910px)
+							i
+								margin-right: 0
+							span
+								width: 80px
+								background-color: shade(rgb(67, 142, 175), 30%)
+								position: absolute
+								bottom: -50px
+								left:-1px
+								text-align: center
+								display: none
+							&:hover
+								span
+									display: block
+
+
+						.logo
+							+size(25px,50px)
+							display: inline-blockd
+							float: left
+							background:
+								image: url(../images/ico.png)
+								repeat: no-repeat
+								position: center center
+
+		li.right-nav
+			float: right
+			margin-right: 10px
+			position: relative
+			.silde-nav-btn
+				cursor: pointer
+				padding: 10px 2em 0 1em
+				padding-top: 10px
+				height: 50px
+				line-height: 15px
+				background-color: tint(rgb(67, 142, 175), 20%)
+				color: white
+
+				&:after
+					position: absolute
+					right: 15px
+					top: 20px
+					+size(0)
+					border: 5px solid transparent
+					border-top: 5px solid white
+					content: ''
+					display: block
+
+			ul.slide-nav
+				display: none
+				position: absolute
+				background-color: white
+				+size(160px)
+				box-shadow: 0px 0px 5px #ccc
+				right: 0
+				padding-top: 10px
+				padding-bottom: 10px
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					top: -20px
+					right: 10px
+					border: 10px solid transparent
+					border-bottom: 10px solid white
+				li
+					a
+						display: block
+						padding-left: 15px
+						color: #222
+						&:hover
+							background-color: #F1F5F9
+						i
+							margin-right: 10px
+							font-size: 1em
+				li:nth-child(1),li:nth-child(2)
+					height: 30px
+					line-height: 30px
+				li:nth-child(3)
+					border-bottom: 1px solid #ccc
+					border-top: 1px solid #ccc
+				li:nth-child(2)
+					margin-bottom: 10px
+				li:nth-child(3),li:nth-child(4)
+					height: 39px
+					line-height: 39px
+
+
+

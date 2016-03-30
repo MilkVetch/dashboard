@@ -1,0 +1,109 @@
+$bl: #3498db
+$bd: #2980b9
+
+.aside
+	width: 230px
+	height: 612px
+	border-right: 1px solid #3482D3
+	float: left
+	.nav-title
+		height: 50px
+		line-height: 50px
+
+		border-bottom: 2px solid #ccc
+		a
+			padding-left: 50px
+			color: $bd
+			&:hover
+				color: $bl
+				i.fa-cog
+					transform: rotate(10deg)
+			display: block
+
+		i.fa-cog
+			margin-right: 10px
+		i.fa-angle-down
+			margin-left: 40px
+
+
+	ul.navigation
+		list-style: none
+		li
+			a
+				display: block
+				position: relative
+				height: 50px
+				line-height: 50px
+				color: #222
+				padding-left: 74px
+				&:hover
+					color: $bd
+					background-color: #f1f5f9
+					&:after
+						width: 0
+						height: 0
+						border: 5px solid #F1F5F9
+						border-left: 5px solid #3482D3
+						top: -5px
+						left: 50px
+				&:before, &:after
+					position: absolute
+					content: ''
+				&:before
+					width: 0px
+					height: 50px
+					border-right: 1px dotted #3482D3
+					left: 50px
+				&:after
+					width: 10px
+					height: 0px
+					border-top: 1px dotted #3482D3
+					left: 50px
+					margin-top: 25px
+			a.active
+				&:after
+					width: 0
+					height: 0
+					border: 5px solid transparent
+					border-left: 5px solid red
+					top: -5px
+					left: 50px
+
+			&:not(:last-child)
+				border-bottom: 1px dashed #ccc
+
+
+	.slide-ctrl
+		display: block
+		height: 35px
+		background-color: #eee
+		border-top: 2px solid #ccc
+		border-bottom: 2px solid #ccc
+		position: relative
+		&:hover
+			.circle-btn
+				border-color: #bbb
+				i
+					color: #bbb
+			.c-line
+				background-color: #bbb
+		.circle-btn
+			z-index: 3
+			+size(25px)
+			background-color: white
+			border-radius: 50%
+			border: 2px solid #ccc
+			+centerer
+			text-align: center
+
+			i
+				color: #ccc
+				margin-left: -2px
+				font-size: 16px
+				margin-top: 2px
+
+		.c-line
+			z-index: 2
+			+centerer
+			+size(190px, 2px)
+			background-color: #ddd

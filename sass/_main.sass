@@ -1,0 +1,180 @@
+.main
+	float: right
+	width: calc(100% - 230px)
+	background-color: #f5faff
+
+	// .user-info
+	// 	+size(100%, 50px)
+	// 	line-height: 49px
+	// 	color: white
+	// 	background-color: #3382d2
+	// 	padding-left: 20px
+	// 	border-top: 2px solid shade(#3382d2, 20%)
+	// 	border-bottom: 2px solid shade(#3382d2, 20%)
+	.useful-tools
+		+size(100%, 60px)
+		background-color: #f5faff
+		padding-top: 13px
+		padding-left: 25px
+		padding-right: 25px
+		button
+			border-radius: 3px
+			cursor: pointer
+			+size(100px, 34px)
+			border: 1px solid #ccc
+			color: #222
+			outline: none
+			background-color: white
+			&:hover
+				color: white
+				background-color: rgb(67, 142, 175)
+				border: 1px solid rgb(67, 142, 175)
+		button:first-child
+			background-color: rgb(67, 142, 175)
+			border: 1px solid rgb(67, 142, 175)
+			color: white
+			i
+				margin-right: 10px
+			&:hover
+				background-color: shade(rgb(67, 142, 175), 10%)
+		button.search
+			float: right
+			+size(50px, 34px)
+			line-height: 34px
+			color: #222
+			background-color: transparent
+			border: none
+		input
+			outline: none
+			float: right
+			+size(140px, 34px)
+			border: 1px solid #ccc
+			padding-left: 10px
+
+	table
+		width: 100%
+		margin: 0 auto
+		background-color: white
+		border-collapse:collapse
+	table, th, td
+		box-sizing: border-box
+		border: 1px solid #ccc
+		tr
+			height: 40px
+			width: 100%
+			td
+				padding-left: 10px
+				width: 100px
+			td.check-box
+				padding: 0
+				text-align: center
+				width: 30px
+			td.table-num
+				text-align: right
+				padding-right: 10px
+			td.table-text
+				text-align: left
+		// tr:nth-child(odd)
+		// 	background-color: #FBFBFB
+		tr.table-head
+			height: 40px
+			background-color: #FBFBFB
+			td
+				+clearfix
+				.table-item
+					float: left
+					line-height: 40px
+				.u-d
+					float: right
+					+size(20px,40px)
+					.up-a, .down-a
+						box-sizing: border-box
+						+size(20px)
+						cursor: pointer
+						font-size: 20px
+						overflow: hidden
+						position: relative
+						span
+							display: block
+							position: absolute
+							bottom: 1px
+							left: 50%
+							transform: translateX(-50%)
+							+size(0)
+							border: 3px solid transparent
+							border-bottom: 4px solid black
+					.down-a
+						transform: rotate(180deg)
+
+
+		button
+			+size(30px)
+			border: none
+			background-color: transparent
+			background-position: center
+			background-repeat: no-repeat
+		button.btn1
+			background-image: url(../images/1.png)
+		button.btn2
+			background-image: url(../images/2.png)
+		button.btn3
+			background-image: url(../images/3.png)
+		i
+			text-align: center
+			+size(30px)
+			line-height: 30px
+			color: transparent
+			cursor: pointer
+			font-size: 25px
+			font-weight: lighter
+
+		// i.fa-search-plus
+		// 	color: #5E9DD1
+		// 	&:hover
+		// 		color: shade(#5E9DD1, 10%)
+		// i.fa-pencil
+		// 	color: #7AB357
+		// 	&:hover
+		// 		color: shade(#7AB357, 10%)
+		// i.fa-trash
+		// 	color: #E4715F
+		// 	&:hover
+		// 		color: shade(#E4715F, 10%)
+
+	.page-ctrl
+		height: 112px
+		padding-left: 25px
+		padding-right: 25px
+		+clearfix
+		.page-crtl-left
+			float: left
+			line-height: 60px
+		.page-crtl-right
+			float: right
+			button
+				cursor: pointer
+				margin-top: 31px
+				+size(50px, 50px)
+				border: none
+				color: $bl
+				outline: none
+				background-color: white
+				border: 1px solid #ccc
+				&:not(:first-child)
+					border-left: none
+				&:hover
+					background-color: $bd
+					color: white
+			button.page-num
+				width: 50px
+			button.active
+				background-color: $bd
+				color: white
+			button:first-child
+				width: 100px
+				border-top-left-radius: 3px
+				border-bottom-left-radius: 3px
+			button:last-child
+				width: 85px
+				border-top-right-radius: 3px
+				border-bottom-right-radius: 3px

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" href="css/flat-ui.min.css"> -->
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/input.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="modal fade" id="input" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="ModalLabel">新增用户信息</h4>
+	      </div>
+	      <div class="modal-body">
+			<div>
+
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#basic-info" aria-controls="basic-info" role="tab" data-toggle="tab">基本信息</a></li>
+			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">所属岗位</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="basic-info">
+
+						<div class="input-form">
+							<div class="form-item">
+								<label for="logname">登录名<span>*</span></label>
+								<input type="text" class="form-control" id="logname" placeholder="用户登录名">
+							</div>
+							<div class="form-item">
+								<label for="password">密码<span>*</span></label>
+								<input type="password" class="form-control" id="password" placeholder="用户密码">
+							</div>
+							<div class="form-item">
+								<label for="name">姓名<span>*</span></label>
+								<input type="text" class="form-control" id="name" placeholder="用户姓名">
+							</div>
+						</div>
+						<hr>
+						<div class="input-form">
+							<div class="form-item">
+								<label for="email">邮箱<span>*</span></label>
+								<input type="email" class="form-control" id="email" placeholder="用户邮箱">
+							</div>
+							<div class="form-item">
+								<label for="phone">电话<span>&nbsp;</span></label>
+								<input type="text" class="form-control" id="phone" placeholder="用户电话">
+							</div>
+							<div class="form-item">
+								<label for="name">是否启用<span>*</span></label>
+								<input type="checkbox">
+							</div>
+						</div>
+						<hr>
+						<div class="form-note">
+							<label for="phone">备注<span>&nbsp;</span></label>
+							<textarea class="form-control" rows="3"></textarea>
+						</div>
+
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="profile">
+			    	<p>Lorem ipsum Ut elit commodo laborum amet et quis irure id et incididunt nisi sed exercitation eiusmod incididunt adipisicing aliqua velit fugiat magna in nulla esse quis.</p>
+			    </div>
+			  </div>
+
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">保存</button>
+	        <button type="button" class="btn btn-default">删除</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="header">
+		<ul class="main-nav">
+			<li>
+				<ul class="left-nav">
+					<li><a href="#"><div class="logo"></div>小额贷款管理系统</a></li>
+					<li><a href="#"><i class="fa fa-desktop"></i><span>首页</span></a></li>
+					<li><a href="#"><i class="fa fa-list"></i><span>资讯管理</span></a></li>
+					<li><a href="#"><i class="fa fa-pencil-square-o"></i><span>贷款管理</span></a></li>
+					<li><a href="#"><i class="fa fa-bar-chart"></i><span>统计报表</span></a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i><span>系统设置</span></a></li>
+				</ul>
+			</li>
+			<li class="right-nav">
+				<div class="silde-nav-btn">欢迎您<br>admin</div>
+		        <ul class="slide-nav">
+		          <li><a href="#"><i class="fa fa-cog fa-2x"></i>个人信息</a></li>
+		          <li><a href="#"><i class="fa fa-user fa-2x"></i>修改密码</a></li>
+		          <li><a href="#"><i class="fa fa-power-off fa-2x"></i>注销退出</a></li>
+		          <li><a href="#"><i class="fa fa-question-circle fa-2x"></i>联系我们</a></li>
+		        </ul>
+			</li>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<div class="aside">
+			<div class="nav-title">
+				<a href="#"><i class="fa fa-cog"></i>基础设置<i class="fa fa-angle-down"></i></a>
+			</div>
+			<ul class="navigation">
+				<li><a href="#" class="active">用户信息</a></li>
+				<li><a href="#">组织机构</a></li>
+				<li><a href="#">数据字典</a></li>
+				<li><a href="#">系统配置</a></li>
+				<li><a href="#">系统日志</a></li>
+			</ul>
+			<a href="#" class="slide-ctrl">
+				<div class="circle-btn"><i class="fa fa-angle-double-left"></i></div>
+				<div class="c-line"></div>
+			</a>
+		</div>
+		<div class="main">
+<!-- 			<div class="user-info">用户信息</div> -->
+			<div class="useful-tools">
+				<button data-toggle="modal" data-target="#input"><i class="fa fa-plus"></i>新增</button>
+				<button>查看</button>
+				<button>删除</button>
+				<button>导出</button>
+				<input type="text">
+				<button class="search">搜索: </button>
+			</div>
+			<table>
+				<tr class="table-head">
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box"><div class="table-item">行号</div><div class="u-d"><button class="up-a"><span></span></button><button class="down-a"><span></span></button></div></td>
+				  <td class="normal-box"><div class="table-item">姓名</div><div class="u-d"><button class="up-a"><span></span></button><button class="down-a"><span></span></button></div></td>
+				  <td class="normal-box"><div class="table-item">邮箱</div><div class="u-d"><button class="up-a"><span></span></button><button class="down-a"><span></span></button></div></td>
+				  <td class="normal-box"><div class="table-item">电话</div><div class="u-d"><button class="up-a"><span></span></button><button class="down-a"><span></span></button></div></td>
+				  <td class="normal-box"><div class="table-item">最后登录时间</div><div class="u-d"><button class="up-a"><span></span></button><button class="down-a"><span></span></button></div></td>
+				  <td class="normal-box">操作</td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">1</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">2</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">3</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">4</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">5</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">6</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">7</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">8</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">9</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="check-box"><input type="checkbox" class="lisf"/></td>
+				  <td class="normal-box table-num">10</td>
+				  <td class="normal-box table-text">systcm</td>
+				  <td class="normal-box table-text">tsahsbss.com</td>
+				  <td class="normal-box table-num">15214621545</td>
+				  <td class="normal-box table-num">2016-03-20 12:54：54</td>
+				  <td class="normal-box table-text">
+					<button class="btn1"><i class="fa fa-search-plus"></i></button>
+					<button class="btn2"><i class="fa fa-pencil"></i></button>
+					<button class="btn3"><i class="fa fa-trash"></i></button>
+				  </td>
+				</tr>
+			</table>
+
+			<div class="page-ctrl">
+				<div class="page-crtl-left">显示条目 1-10 共10</div>
+				<div class="page-crtl-right">
+					<button>首页</button><button class="page-num active">1</button><button class="page-num">2</button><button class="page-num">3</button><button>下一页</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
